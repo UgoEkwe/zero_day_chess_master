@@ -10,23 +10,11 @@ import SwiftData
 
 @main
 struct ZeroDayChessMasterApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    let chessBoard = ChessBoard()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChessboardView(viewModel: ChessBoardViewModel(chessBoard: chessBoard))
+                .environmentObject(chessBoard)
         }
-        .modelContainer(sharedModelContainer)
     }
 }

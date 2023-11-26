@@ -8,19 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		7B098DDF2B0E8DB300447CB3 /* ZeroDayChessMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DDE2B0E8DB300447CB3 /* ZeroDayChessMasterApp.swift */; };
-		7B098DE12B0E8DB300447CB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DE02B0E8DB300447CB3 /* ContentView.swift */; };
-		7B098DE32B0E8DB300447CB3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DE22B0E8DB300447CB3 /* Item.swift */; };
+		7B098DE12B0E8DB300447CB3 /* ChessboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DE02B0E8DB300447CB3 /* ChessboardView.swift */; };
 		7B098DE52B0E8DB500447CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B098DE42B0E8DB500447CB3 /* Assets.xcassets */; };
 		7B098DE82B0E8DB500447CB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B098DE72B0E8DB500447CB3 /* Preview Assets.xcassets */; };
+		7B098DEF2B0E8F0B00447CB3 /* ChessPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DEE2B0E8F0B00447CB3 /* ChessPiece.swift */; };
+		7B098DF22B0E936600447CB3 /* ChessBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DF12B0E936600447CB3 /* ChessBoard.swift */; };
+		7B098DF42B0EB25800447CB3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DF32B0EB25800447CB3 /* NetworkManager.swift */; };
+		7B098DF62B0EB49D00447CB3 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B098DF52B0EB49D00447CB3 /* APIKeys.plist */; };
+		7B098DF82B0EB4FA00447CB3 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DF72B0EB4FA00447CB3 /* APIResponse.swift */; };
+		7B098DFA2B0EB5A800447CB3 /* ChessBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B098DF92B0EB5A800447CB3 /* ChessBoardViewModel.swift */; };
+		7B4E64682B104E2C00FAFB5F /* ChessSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E64672B104E2C00FAFB5F /* ChessSquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B098DDB2B0E8DB300447CB3 /* ZeroDayChessMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroDayChessMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B098DDE2B0E8DB300447CB3 /* ZeroDayChessMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDayChessMasterApp.swift; sourceTree = "<group>"; };
-		7B098DE02B0E8DB300447CB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7B098DE22B0E8DB300447CB3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7B098DE02B0E8DB300447CB3 /* ChessboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessboardView.swift; sourceTree = "<group>"; };
 		7B098DE42B0E8DB500447CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B098DE72B0E8DB500447CB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B098DEE2B0E8F0B00447CB3 /* ChessPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessPiece.swift; sourceTree = "<group>"; };
+		7B098DF12B0E936600447CB3 /* ChessBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoard.swift; sourceTree = "<group>"; };
+		7B098DF32B0EB25800447CB3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7B098DF52B0EB49D00447CB3 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+		7B098DF72B0EB4FA00447CB3 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		7B098DF92B0EB5A800447CB3 /* ChessBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardViewModel.swift; sourceTree = "<group>"; };
+		7B4E64672B104E2C00FAFB5F /* ChessSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessSquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				7B098DDE2B0E8DB300447CB3 /* ZeroDayChessMasterApp.swift */,
-				7B098DE02B0E8DB300447CB3 /* ContentView.swift */,
-				7B098DE22B0E8DB300447CB3 /* Item.swift */,
+				7BB4DE9B2B140A930023A47C /* Helpers */,
+				7BB4DE9A2B140A6F0023A47C /* ViewModels */,
+				7B098DF02B0E8F1000447CB3 /* Models */,
+				7B4E64692B106D4900FAFB5F /* Views */,
+				7B098DF52B0EB49D00447CB3 /* APIKeys.plist */,
 				7B098DE42B0E8DB500447CB3 /* Assets.xcassets */,
 				7B098DE62B0E8DB500447CB3 /* Preview Content */,
 			);
@@ -68,6 +83,41 @@
 				7B098DE72B0E8DB500447CB3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B098DF02B0E8F1000447CB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B098DEE2B0E8F0B00447CB3 /* ChessPiece.swift */,
+				7B098DF12B0E936600447CB3 /* ChessBoard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B4E64692B106D4900FAFB5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B098DE02B0E8DB300447CB3 /* ChessboardView.swift */,
+				7B4E64672B104E2C00FAFB5F /* ChessSquareView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BB4DE9A2B140A6F0023A47C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B098DF92B0EB5A800447CB3 /* ChessBoardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BB4DE9B2B140A930023A47C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7B098DF32B0EB25800447CB3 /* NetworkManager.swift */,
+				7B098DF72B0EB4FA00447CB3 /* APIResponse.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B098DF62B0EB49D00447CB3 /* APIKeys.plist in Resources */,
 				7B098DE82B0E8DB500447CB3 /* Preview Assets.xcassets in Resources */,
 				7B098DE52B0E8DB500447CB3 /* Assets.xcassets in Resources */,
 			);
@@ -140,9 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B098DE12B0E8DB300447CB3 /* ContentView.swift in Sources */,
-				7B098DE32B0E8DB300447CB3 /* Item.swift in Sources */,
+				7B098DF82B0EB4FA00447CB3 /* APIResponse.swift in Sources */,
+				7B098DF42B0EB25800447CB3 /* NetworkManager.swift in Sources */,
+				7B098DE12B0E8DB300447CB3 /* ChessboardView.swift in Sources */,
+				7B4E64682B104E2C00FAFB5F /* ChessSquareView.swift in Sources */,
 				7B098DDF2B0E8DB300447CB3 /* ZeroDayChessMasterApp.swift in Sources */,
+				7B098DEF2B0E8F0B00447CB3 /* ChessPiece.swift in Sources */,
+				7B098DFA2B0EB5A800447CB3 /* ChessBoardViewModel.swift in Sources */,
+				7B098DF22B0E936600447CB3 /* ChessBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
