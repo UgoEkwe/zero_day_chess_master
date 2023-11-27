@@ -9,7 +9,7 @@ ZeroDay Chess Master is an iOS app designed to enhance the skills of beginner an
 
 ## Getting Started
 1. **Clone the Repository**
-git clone https://github.com/UgoEkwe/zero_day_chess_master/
+- git clone https://github.com/UgoEkwe/zero_day_chess_master/
 
 2. **Configure API Key**
 - Create an `APIKeys.plist` file in the project.
